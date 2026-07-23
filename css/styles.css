@@ -156,6 +156,12 @@ section {
   height: 40px;
   fill: rgba(196, 96, 26, .35);
 }
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
 .hero-name {
   font-size: 36px;
   font-weight: 600;
@@ -399,6 +405,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.proj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .proj-img-ph {
   display: flex;
