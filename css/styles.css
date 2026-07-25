@@ -274,6 +274,18 @@ section {
   transition: opacity .2s;
 }
 .stack-item:hover .stack-icon { opacity: 1; }
+.stack-item > svg.stack-icon { display: none; }
+.stack-item > img.stack-icon {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(83%) saturate(1047%) hue-rotate(345deg) brightness(88%) contrast(90%);
+  object-fit: contain;
+}
+.stack-item:nth-child(1) { order: 4; }
+.stack-item:nth-child(2) { order: 3; }
+.stack-item:nth-child(3) { order: 1; }
+.stack-item:nth-child(4) { order: 5; }
+.stack-item:nth-child(5) { order: 2; }
+.stack-item:nth-child(6) { order: 6; }
+.stack-item:nth-child(7) { order: 7; }
 .stack-name {
   font-size: 11px;
   color: var(--text-3);
