@@ -36,16 +36,14 @@ const translations = {
     'proj.wip':         'In progress',
     'proj.p1.desc':     'Binary image classifier combining classical and quantum computing. Cats vs. dogs, but with qubits.',
     'proj.p2.desc':     'Comparative study of classical statistics and ML for modeling energy consumption in a smart building.',
-    'proj.p3.desc':     'Personal web app for tracking gym weights and progression over time.',
+    'proj.p3.desc':     'Web app for tracking gym weights and progression over time.',
 
     'cert.label':     'Credentials',
     'cert.title':     'Certifications',
     'cert.c1.title':  'AWS Cloud Practitioner',
-    'cert.c1.badge':  'Cloud',
     'cert.c2.title':  'AWS AI Practitioner — Early Adopter',
     'cert.c2.badge':  'Early Adopter',
     'cert.c3.title':  'ISE III — C1 English',
-    'cert.c3.badge':  'Languages',
 
     'edu.label':         'Background',
     'edu.title':         'Education',
@@ -54,16 +52,15 @@ const translations = {
     'edu.d1.degree':     'Computer Science Bachelor — Computation',
     'edu.d1.uni':        'Universidad de Valladolid · Valladolid, Spain',
     'edu.d1.thesis':     'Quantum computing-based machine learning. Image classification using quantum kernels.',
-    'edu.d1.grade':      'Grade: 9.6 / 10',
     'edu.d2.degree':     'Statistics Bachelor',
     'edu.d2.uni':        'Universidad de Valladolid · Valladolid, Spain',
     'edu.d2.thesis':     'Creation of a predictive model for energy consumption in an intelligent building.',
+    'edu.d2.grade':      'Grade: 9.6 / 10',
 
     'contact.label': 'Get in touch',
     'contact.title': 'Contact',
     'contact.desc':  'Interested in working together or have a question? Feel free to reach out.',
 
-    'footer.accent': 'build better.',
   },
 
   es: {
@@ -100,16 +97,14 @@ const translations = {
     'proj.wip':         'En progreso',
     'proj.p1.desc':     'Clasificador binario de imágenes que combina computación clásica y cuántica. Gatos vs. perros, pero con qubits.',
     'proj.p2.desc':     'Estudio comparativo de estadística clásica y ML para modelar el consumo energético en un edificio inteligente.',
-    'proj.p3.desc':     'Aplicación web personal para registrar pesos en el gimnasio y seguir la progresión.',
+    'proj.p3.desc':     'Aplicación web para registrar pesos en el gimnasio y seguir la progresión.',
 
     'cert.label':     'Credenciales',
     'cert.title':     'Certificaciones',
     'cert.c1.title':  'AWS Cloud Practitioner',
-    'cert.c1.badge':  'Cloud',
     'cert.c2.title':  'AWS AI Practitioner — Early Adopter',
     'cert.c2.badge':  'Early Adopter',
     'cert.c3.title':  'ISE III — C1 Inglés',
-    'cert.c3.badge':  'Idiomas',
 
     'edu.label':         'Formación',
     'edu.title':         'Educación',
@@ -118,16 +113,15 @@ const translations = {
     'edu.d1.degree':     'Grado en Ingeniería Informática — Computación',
     'edu.d1.uni':        'Universidad de Valladolid · Valladolid, España',
     'edu.d1.thesis':     'Aprendizaje automático basado en computación cuántica. Clasificación de imágenes mediante kernels cuánticos.',
-    'edu.d1.grade':      'Nota: 9,6 / 10',
     'edu.d2.degree':     'Grado en Estadística',
     'edu.d2.uni':        'Universidad de Valladolid · Valladolid, España',
     'edu.d2.thesis':     'Creación de un modelo predictivo del consumo energético en un edificio inteligente.',
+    'edu.d2.grade':      'Nota: 9,6 / 10',
 
     'contact.label': 'Contacto',
     'contact.title': 'Contacto',
     'contact.desc':  '¿Interesado en colaborar o tienes alguna pregunta? No dudes en escribirme.',
 
-    'footer.accent': 'construye mejor.',
   },
 };
 
