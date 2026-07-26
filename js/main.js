@@ -10,8 +10,8 @@ const translations = {
     'nav.education':  'Education',
     'nav.contact':    'Contact',
 
-    'hero.title': 'Data &amp; Cloud Engineer',
-    'hero.desc':  'Building data pipelines and cloud infrastructure. Passionate about AI, automation, and clean engineering.',
+    'hero.title': 'AI &amp; Data Engineer',
+    'hero.desc':  'AI &amp; Data Engineer with a double degree in Computer Science and Statistics and 3 years of experience. Specialized in the AWS ecosystem, IaC, and data pipelines.',
     'hero.cta1':  'About me',
     'hero.cta2':  'Download CV',
 
@@ -71,8 +71,8 @@ const translations = {
     'nav.education':  'Educación',
     'nav.contact':    'Contacto',
 
-    'hero.title': 'Ingeniero de Datos y Cloud',
-    'hero.desc':  'Construyendo pipelines de datos e infraestructura cloud. Apasionado por la IA, la automatización y la ingeniería limpia.',
+    'hero.title': 'Ingeniero de IA y Datos',
+    'hero.desc':  'Ingeniero de IA y Datos, graduado en Ingeniería Informática y Estadística, con 3 años de experiencia. Especializado en el ecosistema AWS, infraestructura como código (IaC) y pipelines de datos.',
     'hero.cta1':  'Sobre mí',
     'hero.cta2':  'Descargar CV',
 
