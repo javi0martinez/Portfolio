@@ -184,8 +184,16 @@ section {
 }
 .hero-actions {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   margin-bottom: 20px;
+}
+.hero-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 .btn-primary {
   font-size: 12px;
@@ -220,15 +228,21 @@ section {
   gap: 10px;
 }
 .hero-email {
-  display: inline-block;
-  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  box-sizing: border-box;
   font-size: 12px;
-  color: var(--text-3);
+  color: var(--text-2);
+  background: rgba(255,255,255,.04);
+  border: 0.5px solid var(--glass-bdr);
+  border-radius: 6px;
+  padding: 0 10px;
   text-decoration: none;
   user-select: text;
-  transition: color .2s;
+  transition: border-color .2s, background .2s, color .2s;
 }
-.hero-email:hover { color: var(--accent); }
+.hero-email:hover { color: var(--accent); border-color: var(--accent-bdr); background: var(--accent-dim); }
 .social-icon {
   width: 32px;
   height: 32px;
