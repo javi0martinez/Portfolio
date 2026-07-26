@@ -27,8 +27,8 @@ const translations = {
     'exp.job2.date':      'Jun 2021 — Aug 2021',
     'exp.job2.company':   'Luce IT · Valladolid, Spain',
     'exp.job2.b1':        'Developed a customer service chatbot for a parcel company.',
-    'exp.job2.b2':        'Conducted exploratory data analysis on 100+ TB of data to support downstream machine learning modeling.',
-    'exp.job2.b3':        'Implemented form field validations using regular expressions.',
+    'exp.job2.b2':        'Conducted exploratory data analysis in Google Cloud on 100+ TB of data to support downstream machine learning modeling.',
+    'exp.job2.b3':        'Implemented form field validations using regular expressions in Snowflake.',
 
     'proj.label':       'Work',
     'proj.title':       'Projects',
@@ -88,8 +88,8 @@ const translations = {
     'exp.job2.date':      'Jun 2021 — Ago 2021',
     'exp.job2.company':   'Luce IT · Valladolid, España',
     'exp.job2.b1':        'Desarrollé un chatbot de atención al cliente para una empresa de paquetería.',
-    'exp.job2.b2':        'Realicé análisis exploratorio de datos sobre más de 100 TB para apoyar modelos de aprendizaje automático.',
-    'exp.job2.b3':        'Implementé validaciones de campos de formulario usando expresiones regulares.',
+    'exp.job2.b2':        'Realicé análisis exploratorio de datos en Google Cloud sobre más de 100 TB para apoyar modelos de aprendizaje automático.',
+    'exp.job2.b3':        'Implementé validaciones de campos de formulario usando expresiones regulares en Snowflake.',
 
     'proj.label':       'Trabajo',
     'proj.title':       'Proyectos',
