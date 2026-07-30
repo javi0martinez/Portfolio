@@ -497,9 +497,14 @@ section {
   display: flex;
   align-items: center;
   gap: 16px;
+  color: inherit;
+  text-decoration: none;
   transition: border-color .2s;
 }
 .cert-card:hover { border-color: rgba(196,96,26,.3); }
+.cert-card--featured {
+  padding: 24px 28px;
+}
 .cert-logo {
   width: 40px;
   height: 40px;
@@ -515,6 +520,22 @@ section {
   font-size: 13px;
   font-weight: 700;
   color: var(--text-1);
+}
+.cert-card--featured .cert-logo--text {
+  width: 128px;
+  height: 128px;
+  font-size: 30px;
+}
+.cert-logo--aws {
+  width: 128px;
+  height: 128px;
+  background: transparent;
+  border: 0;
+}
+.cert-logo--aws img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .cert-info { flex: 1; }
 .cert-title { font-size: 13px; font-weight: 600; color: var(--text-1); margin-bottom: 2px; }
