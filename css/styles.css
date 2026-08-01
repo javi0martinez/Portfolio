@@ -553,6 +553,10 @@ section {
 .cert-card:hover { border-color: var(--accent-hover); }
 .cert-card--featured {
   padding: 24px 28px;
+  min-height: 176px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 .cert-logo {
   width: 40px;
@@ -586,7 +590,8 @@ section {
   height: 100%;
   object-fit: contain;
 }
-.cert-info { flex: 1; }
+.cert-info { flex: 1; min-width: 0; }
+.cert-card--featured .cert-info { flex: unset; }
 .cert-title { font-size: 13px; font-weight: 600; color: var(--text-1); margin-bottom: 2px; }
 .cert-issuer { font-size: 11px; color: var(--text-3); }
 .cert-badge {
@@ -722,5 +727,68 @@ footer {
     align-self: flex-start;
     margin-top: 8px;
   }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 32px 20px 16px;
+    gap: 28px;
+  }
+  .hero-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .hero-photo {
+    width: 120px;
+    height: 160px;
+  }
+  .hero-name { font-size: 26px; }
+  .hero-desc { font-size: 12px; max-width: 100%; }
+
+  /* ── Tech stack ── */
+  .hero-stack {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 0;
+    padding: 16px 0;
+  }
+  .stack-item {
+    flex: 0 0 25%;
+    gap: 5px;
+  }
+  .stack-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .stack-name { font-size: 10px; }
+
+  /* ── Sections ── */
+  section { padding: 28px 20px; }
+  .section-title { font-size: 20px; margin-bottom: 24px; }
+
+  /* ── Cert cards ── */
+  .cert-card--featured {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    min-height: unset;
+  }
+  .cert-logo--aws {
+    width: 72px;
+    height: 72px;
+  }
+  .cert-badge,
+  .cert-badge--accent {
+    flex-basis: 100%;
+    text-align: center;
+    white-space: normal;
+  }
+
+  /* ── Card internals ── */
+  .card-header { flex-direction: column; gap: 4px; }
+  .card-date { align-self: flex-start; }
+
+  /* ── Project cards ── */
+  .proj-body { padding: 14px 16px; }
 }
 
