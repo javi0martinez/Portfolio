@@ -28,24 +28,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── Ambient glows ─────────────────────────────────────── */
-.glow {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-}
-.glow--tr {
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(196,96,26,.10) 0%, transparent 70%);
-  top: -150px; right: -100px;
-}
-.glow--bl {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(196,96,26,.06) 0%, transparent 70%);
-  bottom: 200px; left: -100px;
-}
-
 /* ─── Nav ───────────────────────────────────────────────── */
 #nav {
   display: flex;
