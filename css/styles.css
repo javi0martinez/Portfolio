@@ -16,7 +16,10 @@
   --radius:     10px;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
 
 body {
   font-family: 'Open Sans', system-ui, sans-serif;
@@ -25,7 +28,7 @@ body {
   color: var(--text-2);
   background: linear-gradient(160deg, var(--bg) 0%, var(--bg-end) 40%, #1c1f28 70%, var(--bg) 100%);
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* ─── Nav ───────────────────────────────────────────────── */
@@ -60,6 +63,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: color .2s;
+  white-space: nowrap;
 }
 .nav-link:hover { color: var(--accent); }
 .nav-lang {
@@ -72,8 +76,33 @@ body {
   border-radius: 4px;
   cursor: pointer;
   transition: background .2s;
+  white-space: nowrap;
 }
 .nav-lang:hover { background: var(--accent-dim); }
+.nav-menu-toggle {
+  display: none;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border: 0.5px solid var(--glass-bdr);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+}
+.nav-menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1px;
+  margin: 4px auto;
+  background: var(--text-1);
+}
+.nav-menu-toggle:hover { border-color: var(--accent-bdr); }
+.nav-menu-toggle:focus-visible,
+.nav-link:focus-visible,
+.nav-lang:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
 
 /* ─── Sections ──────────────────────────────────────────── */
 main { position: relative; z-index: 1; }
@@ -625,4 +654,35 @@ footer {
 .footer-tagline { font-size: 12px; font-weight: 300; color: var(--muted); }
 .footer-tagline span { color: #7a3e10; }
 .footer-copy { font-size: 11px; color: var(--muted); }
+
+/* ─── Responsive ───────────────────────────────────────── */
+@media (max-width: 700px) {
+  #nav {
+    padding: 14px 20px;
+    position: sticky;
+  }
+  .nav-menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 20px 16px;
+    background: rgba(26, 26, 26, 0.98);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+  }
+  .nav-links.is-open { display: flex; }
+  .nav-link {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .nav-lang {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+}
 

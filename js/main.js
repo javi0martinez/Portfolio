@@ -151,6 +151,28 @@ document.getElementById('langToggle').addEventListener('click', () => {
   applyLang(currentLang === 'en' ? 'es' : 'en');
 });
 
+/* ─── Mobile navigation ────────────────────────────────── */
+const navMenuToggle = document.getElementById('navMenuToggle');
+const navLinks = document.getElementById('navLinks');
+
+function setNavMenu(isOpen) {
+  navLinks.classList.toggle('is-open', isOpen);
+  navMenuToggle.setAttribute('aria-expanded', String(isOpen));
+  navMenuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  navMenuToggle.title = isOpen ? 'Close navigation' : 'Open navigation';
+}
+
+navMenuToggle.addEventListener('click', () => {
+  setNavMenu(!navLinks.classList.contains('is-open'));
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navLinks.classList.contains('is-open')) {
+    setNavMenu(false);
+    navMenuToggle.focus();
+  }
+});
+
 /* ─── Smooth scroll for nav links ───────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -158,6 +180,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
+      setNavMenu(false);
     }
   });
 });
