@@ -8,6 +8,7 @@ const translations = {
     'nav.projects':   'Projects',
     'nav.certifications': 'Certifications',
     'nav.education':  'Education',
+    'nav.contact':    'Contact',
 
     'hero.title': 'AI &amp; Data Engineer',
     'hero.desc':  'AI &amp; Data Engineer with a double degree in Computer Science and Statistics and 3 years of experience. Specialized in the AWS ecosystem, IaC, and data pipelines.',
@@ -56,6 +57,10 @@ const translations = {
     'edu.d2.thesis':     'Creation of a predictive model for energy consumption in an intelligent building.',
     'edu.d2.grade':      'Grade: 9.6 / 10',
 
+    'contact.label': 'Get in touch',
+    'contact.title': 'Contact',
+    'contact.desc':  'Interested in working together or have a question? Feel free to reach out.',
+
   },
 
   es: {
@@ -64,6 +69,7 @@ const translations = {
     'nav.projects':   'Proyectos',
     'nav.certifications': 'Certificaciones',
     'nav.education':  'Educación',
+    'nav.contact':    'Contacto',
 
     'hero.title': 'Ingeniero de IA y Datos',
     'hero.desc':  'Ingeniero de IA y Datos, graduado en Ingeniería Informática y Estadística, con 3 años de experiencia. Especializado en el ecosistema AWS, infraestructura como código (IaC) y pipelines de datos.',
@@ -111,6 +117,10 @@ const translations = {
     'edu.d2.uni':        'Universidad de Valladolid · Valladolid, España',
     'edu.d2.thesis':     'Creación de un modelo predictivo del consumo energético en un edificio inteligente.',
     'edu.d2.grade':      'Nota: 9,6 / 10',
+
+    'contact.label': 'Contacto',
+    'contact.title': 'Contacto',
+    'contact.desc':  '¿Interesado en colaborar o tienes alguna pregunta? No dudes en escribirme.',
 
   },
 };
