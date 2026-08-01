@@ -82,8 +82,9 @@ body {
   letter-spacing: .04em;
 }
 .nav-links {
-  display: flex;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: 58px 82px 66px 108px 70px auto;
+  column-gap: 28px;
   align-items: center;
 }
 .nav-link {
@@ -142,6 +143,8 @@ section {
   margin: 0 auto;
   scroll-margin-top: 72px;
 }
+#projects { padding-block: 56px; }
+#certifications { padding-block: 28px; }
 .section-label {
   font-size: 10px;
   color: var(--accent);
@@ -224,6 +227,7 @@ section {
   font-size: 13px;
   color: var(--text-2);
   max-width: 380px;
+  min-height: calc(4 * 1.7em);
   margin-bottom: 22px;
 }
 .hero-actions {
