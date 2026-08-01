@@ -127,17 +127,6 @@ section {
   letter-spacing: -.01em;
 }
 
-/* ─── Fade-in (Intersection Observer) ──────────────────── */
-.fade-in {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity .6s ease, transform .6s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: none;
-}
-
 /* ─── Hero ──────────────────────────────────────────────── */
 .hero {
   padding: 64px 48px 24px;
@@ -146,6 +135,19 @@ section {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+.hero-enter {
+  animation: hero-enter .6s ease both;
+}
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .hero-main {
   display: flex;
@@ -467,6 +469,8 @@ section {
   font-weight: 600;
   color: #e8e4de;
   margin-bottom: 8px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   display: flex;
   justify-content: space-between;
   align-items: center;
