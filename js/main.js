@@ -41,7 +41,7 @@ const translations = {
     'cert.label':     'Credentials',
     'cert.title':     'Certifications',
     'cert.c1.title':  'AWS Cloud Practitioner',
-    'cert.c2.title':  'AWS AI Practitioner — Early Adopter',
+    'cert.c2.title':  'AWS AI Practitioner',
     'cert.c2.badge':  'Early Adopter',
     'cert.c3.title':  'ISE III — C1 English',
 
@@ -102,7 +102,7 @@ const translations = {
     'cert.label':     'Credenciales',
     'cert.title':     'Certificaciones',
     'cert.c1.title':  'AWS Cloud Practitioner',
-    'cert.c2.title':  'AWS AI Practitioner — Early Adopter',
+    'cert.c2.title':  'AWS AI Practitioner',
     'cert.c2.badge':  'Early Adopter',
     'cert.c3.title':  'ISE III — C1 Inglés',
 
