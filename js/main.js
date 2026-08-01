@@ -128,6 +128,11 @@ const translations = {
 /* ─── Language state & toggle ───────────────────────────── */
 let currentLang = 'en';
 
+const cvDownloads = {
+  en: 'docs/Javier_Martinez_Resume.pdf',
+  es: 'docs/Javier_Martinez_Sanchez_CV.pdf',
+};
+
 function applyLang(lang) {
   const t = translations[lang];
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -136,6 +141,8 @@ function applyLang(lang) {
   });
   document.documentElement.lang = lang;
   currentLang = lang;
+  const cvDownload = document.getElementById('cvDownload');
+  if (cvDownload) cvDownload.href = cvDownloads[lang];
   const btn = document.getElementById('langToggle');
   if (btn) btn.textContent = lang === 'en' ? 'EN · ES' : 'ES · EN';
 }
